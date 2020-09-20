@@ -14,6 +14,14 @@ url = args.url
 wordlist = args.wordlist
 
 def dirb(url, dict):
+    print("""  _____  _      ____            _
+ |  __ \(_)    |  _ \          | |
+ | |  | |_ _ __| |_) |_   _ ___| |_ ___ _ __
+ | |  | | | '__|  _ <| | | / __| __/ _ \ '__|
+ | |__| | | |  | |_) | |_| \__ \ ||  __/ |
+ |_____/|_|_|  |____/ \__,_|___/\__\___|_|
+
+                                             """)
     try:
         wordlist = open(dict,"rb")
         for path in wordlist.readlines():
